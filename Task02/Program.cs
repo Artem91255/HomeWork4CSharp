@@ -9,17 +9,17 @@ Console.WriteLine("Сумма цифр введенного числа равн�
 
 int SumOfNumbers(string number)
 {
-//string to char
-int sum=0;
-char[] charArray = number.ToCharArray();
+    //string to char
+    int sum=0;
+    char[] charArray = number.ToCharArray();
 
-//char to int
-int[] intArray = new int[charArray.Length];
-for(int i =0; i<charArray.Length; i++)
-{
-    intArray[i]=charArray[i]-'0';
-    sum=sum+intArray[i];
+    //char to int
+    int[] intArray = new int[charArray.Length];
+    for(int i =0; i<charArray.Length; i++)
+    {
+        intArray[i]=charArray[i]-'0';
+        sum=sum+intArray[i];
   
-}
-return sum;
+    }
+    return sum;
 }

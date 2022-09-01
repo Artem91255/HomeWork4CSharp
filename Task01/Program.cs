@@ -11,10 +11,10 @@ Console.WriteLine(func(a,b));
 
 int func (int firstNumber, int secondNumber)
 {
-int c=1;
-for(int i = 1; i<=secondNumber; i++)
-{
-    c=c*firstNumber;
-}
-return c;
+    int c=1;
+    for(int i = 1; i<=secondNumber; i++)
+    {
+        c=c*firstNumber;
+    }
+    return c;
 }
