@@ -7,9 +7,14 @@ Console.WriteLine("Введите первое число");
 int a = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите второе число");
 int b = Convert.ToInt32(Console.ReadLine());
-int c=1;
-for(int i = 1; i<=b; i++)
+Console.WriteLine(func(a,b));
+
+int func (int firstNumber, int secondNumber)
 {
-    c=c*a;
+int c=1;
+for(int i = 1; i<=secondNumber; i++)
+{
+    c=c*firstNumber;
 }
-Console.WriteLine(c);
+return c;
+}
